@@ -10,20 +10,15 @@
         android:id="@+id/listStocks"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.8"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHeight_percent="0.8"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/stockIdField"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/stockNameField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintVertical_bias="0.1"
         android:hint="Stock name"
-        app:layout_constraintTop_toBottomOf="@id/listStocks"
         app:layout_constraintBottom_toTopOf="@id/buttonAddStock"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="parent" />
@@ -33,9 +28,7 @@
         android:layout_width="0dp"
         app:layout_constraintHorizontal_weight=".75"
         android:layout_height="wrap_content"
-        app:layout_constraintVertical_bias="0.1"
         android:hint="Stock id"
-        app:layout_constraintTop_toBottomOf="@id/stockNameField"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/buttonAddStock" />
@@ -48,9 +41,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_weight=".25"
         app:layout_constraintLeft_toRightOf="@id/stockIdField"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/stockNameField"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintRight_toRightOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
