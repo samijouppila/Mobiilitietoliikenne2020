@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                     try {
                         List<Address> list = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
                         Address address = list.get(0);
-                        locationField.setText(address.getLocality());
+                        locationField.setText(address.getLocality() + "\n" + address.getCountryName());
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
